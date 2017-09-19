@@ -21,6 +21,7 @@ class PlayersView extends React.Component {
       <div>
 
         <div className="App">
+          {/*ese style lo podian dejar en un css que importaran, no es dinamico. */}
           <header className="jumbotron my-4" style={{marginBottom: 5 + 'px', paddingBottom: 5 + 'px'}}>
             <h1 className="display-3">TenniStats</h1>
             <p className="lead">Find the statistics of your favorite tennis players. Just search any player

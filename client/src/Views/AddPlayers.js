@@ -4,6 +4,7 @@ import '../App.css';
 import '../PlayerStats.css';
 import '../CSS/stars.css';
 
+//podia exportar este component como una función en vez de una clase
 class AddPlayers extends React.Component {
   render() {
     return <div className="col-lg-3 col-md-6 mb-4">

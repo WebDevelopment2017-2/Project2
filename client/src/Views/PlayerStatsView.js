@@ -5,6 +5,8 @@ import '../CSS/stars.css';
 import axios from 'axios';
 
 class PlayerStatsView extends React.Component {
+
+  //Jairo BAutista:Hubieran asigando este stateen el constructor
   state = {users: [], voted:false, statistics : {}}
 
   componentDidMount() {

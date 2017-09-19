@@ -4,10 +4,13 @@ var MongoClient = require('mongodb').MongoClient;
 
 // var db = MongoClient.connect("mongodb://admin:AdminAdmin@ds139954.mlab.com:39954/datosdeportivos");
 var players = [];
+
+//Jairo Bautista: De nuevo, la url podria estar configurada con una variable de ambiente de su servidor.
 MongoClient.connect("mongodb://admin:AdminAdmin@ds139954.mlab.com:39954/datosdeportivos", function (err, db) {
   if (!err) {
     console.log("We are connected");
 
+    //Jairo Bautista: hubiera sido bueno que pasaran las funciones del router como arrow functions. 
     router.get('/', function (req, res, next) {
       res.render('index', {title: 'Express'});
     });

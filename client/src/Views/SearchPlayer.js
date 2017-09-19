@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 import axios from 'axios';
 import AddPlayers from './AddPlayers.js'
 
-
+//es curioso que mezclen axios y fetch en algunos lados
 
 class SearchPlayer extends React.Component {
   state2 = {users: []}

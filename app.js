@@ -8,10 +8,13 @@ var MongoClient = require('mongodb').MongoClient;
 
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+//Jairo Bautista: Este archivo no lo estan usando podrian quitarlo
+//var users = require('./routes/users');
 
 var app = express();
 
+//Jairo Bautista: Desconozco en que servidor tienen alojado su proyecto,
+// pero seria bueno dejar esta url en una variable del servidor
 MongoClient.connect("mongodb://admin:AdminAdmin@ds139954.mlab.com:39954/datosdeportivos", function (err, db) {
   if (!err) {
     console.log("We are connected");
@@ -31,7 +34,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+
+//Jairo Bautista: No la usan
+//app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
